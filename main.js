@@ -5,5 +5,5 @@ var pageHeader = new PageHeader(header);
 
 var gradeTable = new GradeTable(table);
 
-var application = new App(gradeTable);
+var application = new App(gradeTable,pageHeader);
 application.start();
