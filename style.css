@@ -2,10 +2,9 @@ table, thead, td {
      border: 3px solid black;
 }
 .table {
-    width: 80%;
+    margin-left: 80px;
     height: 50px;
-    margin-left: 10%;
-    margin-right: 10%;
+    
 }
 thead {
     font-size: 20px;
