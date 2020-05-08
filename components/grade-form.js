@@ -1,7 +1,7 @@
 class GradeForm {
     constructor(formElement) {
         this.formElement = formElement;
-        this.formElement.addEventListener('submit', this.handleSubmit.bind(this);
+        this.formElement.addEventListener('submit', this.handleSubmit.bind(this));
     }
     onSubmit(createGrade) {
         this.createGrade = createGrade;
