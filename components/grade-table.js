@@ -5,12 +5,12 @@ class GradeTable {
     }
     updateGrades(grades) {
         var tableBody = this.tableElement.querySelector('tbody');
-        var p = this.tableElement.querySelector('p');
+        var pElement = this.tableElement.querySelector('p');
         for (var i = 0; i < grades.length; i++) {
             tableBody.append(this.renderGradeRow(grades[i], this.deleteGrade));
         }
         if (grades.length === 0) {
-            p.classList.remove("d-none");
+            pElement.classList.remove('d-none');
         }
     }
     onDeleteClick(deleteGrade) {
