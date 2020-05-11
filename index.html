@@ -28,6 +28,7 @@
                         <td>Student Name</td>
                         <td>Course</td>
                         <td>Grade</td>
+                        <td>Operations</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -49,17 +50,20 @@
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary offset-6" type="submit" value="Input">Add</button>
-                    <button class="btn btn-danger" type="reset" value="Reset">Cancel</button>
+                    <button class="btn btn-warning" type="reset" value="Reset">Cancel</button>
                 </div>
             </form>
+        </div>
+        <div>
+            <p class="d-none" id="no-grades">No Grades Recorded</p>
         </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="components/app.js"></script>
     <script src="components/grade-table.js"></script>
     <script src="components/page-header.js"></script>
     <script src="components/grade-form.js"></script>
-    <script src="components/app.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

@@ -25,3 +25,10 @@ button {
     padding-right: 7px;
     padding-top: 10px;
 }
+#no-grades {
+    color: crimson;
+    font-weight: bolder;
+    font-size: 24px;
+    text-align: center;
+    text-shadow: 1px 2px black;
+}
