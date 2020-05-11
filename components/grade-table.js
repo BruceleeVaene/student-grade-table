@@ -5,7 +5,7 @@ class GradeTable {
     }
     updateGrades(grades) {
         var tableBody = this.tableElement.querySelector('tbody');
-        var pElement = this.tableElement.querySelector('p');
+        var pElement = document.getElementById('no-grades');
         while (tableBody.firstChild) {
             tableBody.removeChild(tableBody.firstChild)
         }
@@ -14,6 +14,8 @@ class GradeTable {
         }
         if (grades.length === 0) {
             pElement.classList.remove('d-none');
+        } else {
+            pElement.classList = 'd-none';
         }
     }
     onDeleteClick(deleteGrade) {
@@ -31,6 +33,7 @@ class GradeTable {
         course.textContent = data.course;
         grade.textContent = data.grade;
         button.textContent = 'Delete!';
+        button.classList.add('btn', 'btn-danger');
 
         row.append(name,course,grade);
         deleteButton.append(button);
